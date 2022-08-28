@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <title>My Burger</title>
+</head>
+<body>
+
+  <section class="menu" id="menu">
+        <!-- btn mostrarCarrito -->
+            <div class="botonMostrar">
+              <button class="btnmostrarCart" ><i class="bi bi-cart"></i>  Mostrar carrito</button>
+            </div>    
+    
+           
+
+            <!-- title -->
+            <div class="title">
+              <img class="logo" src="images/logo3.jpg">
+               
+                <div class="underline"></div>
+            </div>
+                 <!-- template carrito -->
+            
+              <template class="carrito">
+                <tr>
+                  <th scope="row">id</th>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <button class="btnAgregar">+</button>
+                    <button class="btnQuitar">-</button>
+                   
+
+                  </td>
+                  <td>$ <span></span></td>
+                </tr>
+              </template>
+       
+            <!-- botones de filtrado-->
+            <div class="ContenedorBotones" id="ContenedorBotones">
+                <button class="btnFiltro" id="btnTodas" >
+                  TODAS</button>
+                <button class="btnFiltro" id="btnSimple" >
+                  SIMPLE
+                </button>
+                <button class="btnFiltro" id="btnDoble" >
+                DOBLE
+                </button>
+                <button class="btnFiltro" id="btnVeggie" >
+                VEGGIE
+                </button>
+        
+            </div>
+           <!-- carrito de compras-->
+            <div class="conteinerCart" id="conteinerCart">
+                  <div class="modal modal-close">
+                    <p class="close"></p>
+                    <div class="modal-body" id="bodyModal"></div>
+                    <div class="modal-footer" id="footerMod"></div>
+                    <button class="btnConfirmarCompra"></button>
+                  </div>
+            </div>
+   
+    
+           <!-- card hamburguesas-->
+            <div class="cards" id="cards"></div>
+ <!-- card hamburguesas template-->
+            <template id="template">
+              <div class="card" id="card">
+               <div class="conteiner">
+                <img >
+                <div class="detalles">
+                  <figcaption></figcaption>
+                  <div class="descripcion"></div>
+                  <div class="precio"></div>
+                  <button class="addcarrito">Agregar al carrito</button>
+                </div>
+               
+               </div>
+              </div>
+            </template>
+         
+  
+   </section>
+ 
+ 
+</body>
+
+ <!-- archivos js-->
+ 
+ <script  src="miArchivo.js"></script>
+ 
+
+ 
+</html>

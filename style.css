@@ -1,0 +1,355 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   scroll-padding-top: 2rem;
+   list-style: none;
+   text-decoration: none;
+ }
+
+
+
+
+
+body {
+   background-color:rgb(254,250,215);
+   height: 100vh;
+   display: grid;
+   place-items: center center;
+   font-family: 'sans-serif'; 
+
+}
+
+
+.cards {
+ margin-top: 50px;
+   display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ padding: 20px;
+ grid-gap: 40px;
+
+
+}
+.card{
+ background-color: #050317;
+ border-radius: 10px;
+ box-shadow: 0 0 30px rgba(0, 0, 0, 18);
+ transition: all 0.3s linear;
+ margin-top: 30px;
+ border: #050317;
+ 
+  
+ 
+}
+.precio {
+ font-size: large;
+ font-weight:bold;
+}
+
+.conteiner {
+
+   position: relative;
+   border-radius: 10px;
+   background-color: rgb(245, 204, 109);
+   height: 100%;
+}
+.detalles{
+  background-color:rgb(245, 204, 109);
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+}
+img {
+   width: 100%;
+  height: 80%;
+  
+   display: block;
+   border-radius: 20px 20px 0 0;
+   padding: 10px;
+   
+}
+.contenedor:after{
+
+   content: "";
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   /* border-radius: 20px 20px 0 0; */
+   /* opacity: 0.7; */
+}
+
+.details {
+
+padding: 20px 10px;
+}
+.details>h3 {
+
+   color: white;
+   font-weight: 600;
+   font-size: 18px;
+   margin: 10px 0 15px 0;
+}
+.details>p {   
+   color: antiquewhite;
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 400;  
+}
+
+ .ContenedorBotones{
+
+   width: 100%;
+  
+
+ }
+ .btnFiltro{
+   text-transform: uppercase;
+   background: transparent;
+   color: black;
+   padding: 0.375rem 0.75rem;
+   letter-spacing: 0.25rem;
+   display: inline-block;
+   transition: all 0.3s linear;
+   font-size: 0.875rem;
+   border: 2px solid black;
+   cursor: pointer;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+   border-radius: 0.5rem;
+   margin-right: 5px;
+ }
+ .btnFiltro:hover{
+
+   background:rgb(191,61,11);
+   color: white;
+ }
+ .addcarrito, .botonCancelar, .botonConfirmar{
+  text-transform: uppercase;
+   background: whitesmoke;
+   color: black;
+   padding: 0.375rem 0.75rem;
+   letter-spacing: 0.25rem;
+   display: inline-block;
+   transition: all 0.3s linear;
+   font-size: 0.875rem;
+   border: 2px solid black;
+   cursor: pointer;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+   border-radius: 0.5rem;
+   margin-right: 5px;
+   direction: ltr;
+ }
+ .addcarrito:hover, .botonCancelar:hover, .botonConfirmar:hover{
+  background:rgb(191,61,11);
+  color: white;
+ }
+ figcaption{
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: rgb(191,61,11);
+ }
+ .menu {
+   padding: 5rem 0;
+ }
+ .title {
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: xx-large;
+ }
+ .underline {
+   width: 5rem;
+   height: 0.25rem;
+   background: black;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .ContenedorBotones {
+   margin-bottom: 4rem;
+   display: flex;
+   justify-content: center;
+   
+ }
+ .hide {
+   display: none;
+ }
+ .active {
+   background-color: #727178;
+   color: #ffffff;
+ }
+ .container {
+   padding-top: 1em;
+   color: #110f29;
+ }
+ .container h5 {
+   font-weight: 500;
+   color: #ffffff;
+}
+h6 {
+   color: #e7e6ee;
+   font-weight: 500;
+}
+.conteinerCart {
+ opacity: 0;
+ visibility: hidden;
+ position: fixed;
+ z-index: 1000;
+ width: 100%;
+ height: 100vh;
+ top: 0;
+ left:0;
+ background: rgba(0,0, 0, 0.5);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height:auto;
+  background: #ffffff;
+  
+  overflow: hidden;
+ 
+  position: relative;
+  transition: transform 0.9s;
+  transform: translateY(0%);
+  
+  margin-right: 5px;
+  font-size: 0.875rem;
+   border: 2px solid black;
+   border-radius: 10px;
+background-color:rgb(254,250,215);
+border: 2px solid rgb(191,61,11);
+overflow-y: scroll;
+ 
+
+}
+
+.bodyModal{
+  width: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   overflow-y: scroll;
+   
+}
+.modal-close{
+
+  transform: translateY(-200%);
+}
+
+.btnmostrarCart{
+  text-transform: uppercase;
+   background: transparent;
+   color: black;
+   padding: 0.375rem 0.75rem;
+   letter-spacing: 0.25rem;
+  
+   transition: all 0.3s linear;
+   font-size: 0.875rem;
+   border: 2px solid black;
+   cursor: pointer;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+   border-radius: 0.5rem;
+   margin-right: 5px;
+  
+}
+.btnmostrarCart:hover { 
+  background: rgb(191,61,11);
+  color: white;
+}
+.botonMostrar{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.imgCarrito {
+
+  width: 200px;
+  
+  border-radius: 0%;
+}
+.cardCarrito {
+
+background-color: #ffffff;
+color: #110f29;
+width: 100%;
+background-color: rgb(254,250,215);
+
+}
+.containerCarrito {
+  margin: 5px;
+  color: #110f29;
+  
+}
+.imgCarrito > img {
+
+  border-radius: 0%;
+  height:150px;
+  width: 200px;
+}
+.cardCarrito {
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  margin: auto;
+}
+.botonConfirmar, .botonCancelar,.botonEliminar {
+  text-transform: uppercase;
+  background: transparent;
+  color: black;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+ 
+  transition: all 0.3s linear;
+  font-size: 0.7rem;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin-right: 5px;
+
+}
+.botonEliminar {
+  margin-bottom: auto;
+  margin-top: auto;
+  
+}
+h5 {
+
+  padding: 10px;
+font-family: "Poppins", sans-serif;
+font-size: 1.2rem;
+}
+.logo {
+
+  width: 500px;
+  height: auto;
+ 
+
+}
+.title{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(254,250,215);
+  
+}
+section {
+  background-color: rgb(254,250,215);
+}
+.ContenedorBotones {
+
+padding: 5px;
+margin: 10px;
+}

@@ -1,0 +1,104 @@
+
+
+    [
+        {
+          "id":1, 
+           "nombre": "hamburguesa Clasica",
+           "precio": 800,
+           "descripcion" : "Lechuga, mayonesa, tomate, queso, huevo, papas fritas",
+           "tipo": "simple",
+           "img": "images/clasica.jpg"
+        },
+        
+        {
+          "id":2, 
+           "nombre": "hamburguesa chesse",
+           "precio": 900,
+          "descripcion" : "cheso cheddar, mayonesa, papas fritas",
+          "tipo": "simple",
+          "img": "images/chesse.jpg"
+    
+        },
+        {"id":3, 
+           "nombre": "hamburgesa yankke",
+           "precio": 1000,
+          "descripcion" : "cheso  x2, bacon x2 mayonesa, papas fritas",
+          "tipo": "simple",
+          "img": "images/yankee.jpg"
+    
+    
+        },
+        {
+          "id":4, 
+          "nombre": "hamburguesa criolla",
+          "precio": 1200,
+          "descripcion" : "mayonesa de apio, chimichurri, papas fritas",
+          "tipo": "simple",
+          "img": "images/criolla.jpg"
+    
+    
+    
+        },
+        {
+          "id":5, 
+          "nombre": "hamburguesa Mexicana",
+          "precio": 1200,
+          "descripcion" : "palta, mayonesa, papas fritas",
+          "tipo": "simple",
+          "img": "images/mexicana.jpg"
+    
+    
+        },
+        {
+          "id":6, 
+           "nombre": "hamburguesa Clasica MAX",
+           "precio": 1800,
+           "descripcion" : "cheso cheddar, mayonesa, papas fritas",
+           "tipo": "doble",
+           "img": "images/doble.jpg"
+        },
+        
+        {
+          "id":7, 
+          "nombre": "hamburguesa chesse MAX",
+          "precio": 1900,
+          "descripcion" : "cheso  x2, bacon x2 mayonesa, papas fritas",
+          "tipo": "doble",
+          "img": "images/doble.jpg"
+    
+        },
+        {
+          "id":8, 
+          "nombre": "hamburguesa yankke MAX",
+          "precio": 1800,
+          "descripcion" : "cheso  x2, bacon x2 mayonesa, papas fritas",
+          "tipo": "doble",
+          "img": "images/doble.jpg"
+    
+    
+    
+        },
+        {
+          "id":9, 
+          "nombre": "hamburguesa criolla MAX",
+          "precio": 1800,
+          "descripcion" : "cheso  x2, bacon x2 mayonesa, papas fritas",
+          "tipo": "doble",
+          "img": "images/doble.jpg"
+    
+    
+    
+    
+        },
+        {
+          "id":10, 
+          "nombre": "hamburgesa Veggie",
+          "precio": 1200,
+          "descripcion" : "cheso  x2, mayonesa, papas fritas",
+          "tipo": "veggie",
+          "img": "images/veggie.jpg"
+    
+    
+        }
+    
+      ]
