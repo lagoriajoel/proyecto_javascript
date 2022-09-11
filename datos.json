@@ -99,6 +99,26 @@
           "img": "images/veggie.jpg"
     
     
+        },
+        {
+          "id":11, 
+          "nombre": "hamburgesa Veggie cheddar",
+          "precio": 1200,
+          "descripcion" : "cheso  x2, mayonesa, papas fritas",
+          "tipo": "veggie",
+          "img": "images/veggie.jpg"
+    
+    
+        },
+        {
+          "id":12, 
+          "nombre": "hamburgesa Veggie MAX",
+          "precio": 1200,
+          "descripcion" : "cheso  x2, mayonesa, papas fritas",
+          "tipo": "veggie",
+          "img": "images/veggie.jpg"
+    
+    
         }
     
       ]

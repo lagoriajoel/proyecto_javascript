@@ -11,12 +11,9 @@
  }
 
 
-
-
-
 body {
-   background-color:rgb(254,250,215);
-   height: 100vh;
+  
+   
    display: grid;
    place-items: center center;
    font-family: 'sans-serif'; 
@@ -24,7 +21,7 @@ body {
 }
 
 
-.cards {
+.mycards {
  margin-top: 50px;
    display: grid;
  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -33,7 +30,7 @@ body {
 
 
 }
-.card{
+.mycard{
  background-color: #050317;
  border-radius: 10px;
  box-shadow: 0 0 30px rgba(0, 0, 0, 18);
@@ -128,6 +125,9 @@ padding: 20px 10px;
    background:rgb(191,61,11);
    color: white;
  }
+ .addcarrito {
+  width: 100%;
+ }
  .addcarrito, .botonCancelar, .botonConfirmar{
   text-transform: uppercase;
    background: whitesmoke;
@@ -163,7 +163,7 @@ padding: 20px 10px;
    margin-bottom: 2rem;
    font-size: xx-large;
  }
- .underline {
+ .linea {
    width: 5rem;
    height: 0.25rem;
    background: black;
@@ -210,42 +210,9 @@ h6 {
  align-items: center;
  
 }
-.modal {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height:auto;
-  background: #ffffff;
-  
-  overflow: hidden;
- 
-  position: relative;
-  transition: transform 0.9s;
-  transform: translateY(0%);
-  
-  margin-right: 5px;
-  font-size: 0.875rem;
-   border: 2px solid black;
-   border-radius: 10px;
-background-color:rgb(254,250,215);
-border: 2px solid rgb(191,61,11);
-overflow-y: scroll;
- 
 
-}
 
-.bodyModal{
-  width: auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   overflow-y: scroll;
-   
-}
-.modal-close{
 
-  transform: translateY(-200%);
-}
 
 .btnmostrarCart{
   text-transform: uppercase;
@@ -347,6 +314,7 @@ font-size: 1.2rem;
 }
 section {
   background-color: rgb(254,250,215);
+  width: 100%;
 }
 .ContenedorBotones {
 

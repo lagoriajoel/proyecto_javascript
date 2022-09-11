@@ -6,48 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- estilos-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="librerias/bootstrap.min.css">
+
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   <!-- Fuente -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+   <!-- libreria -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+
     
     <title>My Burger</title>
 </head>
 <body>
+  
 
   <section class="menu" id="menu">
+    
         <!-- btn mostrarCarrito -->
             <div class="botonMostrar">
-              <button class="btnmostrarCart" ><i class="bi bi-cart"></i>  Mostrar carrito</button>
+              <button class="btnmostrarCart" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-cart"></i>  Mostrar carrito</button>
             </div>    
     
-           
-
-            <!-- title -->
+        <!-- titulo -->
             <div class="title">
               <img class="logo" src="images/logo3.jpg">
                
-                <div class="underline"></div>
+                <div class="linea"></div>
             </div>
-                 <!-- template carrito -->
+        <!-- template carrito -->
             
-              <template class="carrito">
-                <tr>
-                  <th scope="row">id</th>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <button class="btnAgregar">+</button>
-                    <button class="btnQuitar">-</button>
-                   
+      <div class="container">
 
-                  </td>
-                  <td>$ <span></span></td>
-                </tr>
-              </template>
+                <template id="templateFooter">
+                    <th scope="row">Total productos</th>
+                    <td></td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" id="vaciarCarrito">
+                            vaciar todo
+                        </button>
+                    </td>
+                    <td class="font-weight-bold">$ <span>5000</span></td>
+                </template>
+                
+                <template id="templateCarrito">
+                  <tr>
+                  
+                    <td id="colNombre">Café</td>
+                    <td id="colCantidad">1</td>
+                    <td>
+                        <button class="btn btn-info btn-sm">
+                            +
+                        </button>
+                        <button class="btn btn-danger btn-sm">
+                            -
+                        </button>
+                    </td>
+                    <td>$ <span>500</span></td>
+                  </tr>
+                </template>
+             
        
-            <!-- botones de filtrado-->
-            <div class="ContenedorBotones" id="ContenedorBotones">
+        <!-- botones de filtrado-->
+        <div class="ContenedorBotones" id="ContenedorBotones">
                 <button class="btnFiltro" id="btnTodas" >
                   TODAS</button>
                 <button class="btnFiltro" id="btnSimple" >
@@ -60,23 +83,50 @@
                 VEGGIE
                 </button>
         
-            </div>
-           <!-- carrito de compras-->
-            <div class="conteinerCart" id="conteinerCart">
-                  <div class="modal modal-close">
-                    <p class="close"></p>
-                    <div class="modal-body" id="bodyModal"></div>
-                    <div class="modal-footer" id="footerMod"></div>
-                    <button class="btnConfirmarCompra"></button>
+        </div>
+          
+
+        <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-black">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
+                  <div class="modal-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                        
+                        
+                          <th scope="col">Nombre</th>
+                          <th scope="col">cantidad</th>
+                      
+
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="itemsCarrito"></tbody>
+                      <tfoot>
+                        <tr id="footer">
+                          <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success "data-bs-dismiss="modal" id="btnConfirmarCompra">Confirmar Compra</button>
+                  </div>
+                </div>
+              </div>
             </div>
-   
-    
-           <!-- card hamburguesas-->
-            <div class="cards" id="cards"></div>
- <!-- card hamburguesas template-->
+      <!-- card hamburguesas-->
+            <div class="mycards" id="mycards"></div>
+      <!-- card hamburguesas template-->
             <template id="template">
-              <div class="card" id="card">
+              <div class="mycard" id="mycard">
                <div class="conteiner">
                 <img >
                 <div class="detalles">
@@ -92,14 +142,11 @@
          
   
    </section>
- 
- 
+   <!-- archivos js-->
+   <script  src="miArchivo.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   
 </body>
 
- <!-- archivos js-->
- 
- <script  src="miArchivo.js"></script>
- 
 
- 
 </html>
